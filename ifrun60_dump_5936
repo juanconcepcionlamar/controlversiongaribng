@@ -1,0 +1,82 @@
+[02/22/17 21:08:59 SA Western Standard Time]::Client Status [ConnId=0, PID=5936]
+	>> ERROR: Abnormal termination, Error Code: C0000005 ACCESS_VIOLATION
+
+======================= STACK DUMP =======================
+
+Fault address:  00693370 01:000A2370
+Module: C:\orant\bin\PLS805.dll
+
+System Information:
+Operating System: Windows NT Version 6.1 Build 7601 Service Pack 1
+Command line: IFDBG60 -SsL09@
+FORM/BLOCK/FIELD: FFACTURA_VENTA:FACTURA_VENTAS.FECHA_FACTURA
+Last Trigger: ON-POPULATE-DETAILS - (In Progress)
+Msg: <NULL>
+Last Builtin: SET_ITEM_INSTANCE_PROPERTY - (Successfully Completed)
+
+Registers:
+EAX:00000000
+EBX:016D4004
+ECX:00000000
+EDX:01643498
+ESI:0012E5A8
+EDI:016304A8
+CS:EIP:001B:00693370
+SS:ESP:0023:0012D898  EBP:0012D8B8
+DS:0023  ES:0023  FS:003B  GS:0000
+Flags:00010246
+
+
+Call stack:
+Address   Frame
+00693370  0012D8B8  0001:000A2370 C:\orant\bin\PLS805.dll
+006582B9  0012EAA4  0001:000672B9 C:\orant\bin\PLS805.dll
+67F2B7E6  0012EAB8  ss_mem_alc
+67593E25  0012EADC  kghsmf
+67595B94  0012EAFC  kghalo
+675955D4  0012EB28  kghalo
+67594F44  0012EB74  kghalo
+675CB525  0012EBA4  kohinu
+6759679D  0012EBF4  kghalf
+675CD477  0012EBF8  kohalc
+0163BBB0  0012EBFC  0000:00000000 
+
+[11/12/18 13:15:19 SA Western Standard Time]::Client Status [ConnId=0, PID=5936]
+	>> ERROR: Abnormal termination, Error Code: C0000005 ACCESS_VIOLATION
+
+======================= STACK DUMP =======================
+
+Fault address:  00693370 01:000A2370
+Module: C:\orant\bin\PLS805.dll
+
+System Information:
+Operating System: Windows NT Version 6.1 Build 7601 Service Pack 1
+Command line: IFDBG60 -SsL09@
+FORM/BLOCK/FIELD: FMAIN:ELEMENTOS.BFACTURAR
+Last Trigger: WHEN-BUTTON-PRESSED - (In Progress)
+Msg: <NULL>
+Last Builtin: REPLACE_MENU - (Successfully Completed)
+
+Registers:
+EAX:00000000
+EBX:037CE338
+ECX:00000000
+EDX:016958DC
+ESI:0012E5A8
+EDI:016662DC
+CS:EIP:001B:00693370
+SS:ESP:0023:0012D898  EBP:0012D8B8
+DS:0023  ES:0023  FS:003B  GS:0000
+Flags:00010246
+
+
+Call stack:
+Address   Frame
+00693370  0012D8B8  0001:000A2370 C:\orant\bin\PLS805.dll
+006582B9  0012EAA4  0001:000672B9 C:\orant\bin\PLS805.dll
+67F2B7E6  0012EAB8  ss_mem_alc
+67593E25  0012EADC  kghsmf
+67595B94  0012EAFC  kghalo
+675955D4  0012EB28  kghalo
+67594F8F  0012EB84  kghalo
+
